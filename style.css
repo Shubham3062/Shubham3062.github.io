@@ -17,7 +17,7 @@
 .card{
     width: 90%;
     max-width: 540px;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 50px 35px;
     border: 1px solid rgba(255,255,255,0.3);
@@ -41,7 +41,7 @@
     font-size: 27px;
     border-radius: 50%;
     margin: 18px 5px;
-    color: #fff;
+    color: #ffffff;
     transition: color 0.5s;
 }
 .card .fa-brands:hover{
@@ -52,7 +52,7 @@
     font-size: 27px;
     border-radius: 50%;
     margin: 18px 5px;
-    color: #fff;
+    color: #ffffff;
     transition: color 0.5s;
 }
 .card .fa-solid:hover{
@@ -79,7 +79,7 @@
 }
 .btn:hover{
     background: #135058;
-    color: #fff;
+    color: #ffffff;
 }
 
 
