@@ -1,0 +1,132 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+    --weight4: 500;
+}
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background: #cbe4ff;
+    background: -webkit-linear-gradient(to right, #ffffff, #cbe4ff); 
+    background: linear-gradient(to right, #ffffff, #cbe4ff); 
+}
+.attribution { 
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500; 
+    margin-bottom: 27px;
+}
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+    font-weight: var(--weight4);
+}
+.box h2{
+    margin-top: -10px;
+}
+.box p {
+    color: var(--grayishBlue);
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.box a{
+    text-decoration: none;
+    color: rgb(103, 103, 255);
+}
+.box a:hover{
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: #fff;
+    background-color: rgb(103, 103, 255);
+}
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+@media (max-width: 450px) {
+    .box {
+        height: 120px;
+    }
+    .header p{
+        width: 90%;
+    }
+}
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+    .body{
+    background: #d4e2f1;
+    background: -webkit-linear-gradient(to right, #ffffff, #d4e2f1); 
+    background: linear-gradient(to right, #ffffff, #d4e2f1); 
+    }
+}
+.cyan {
+    border-top: 4px solid var(--cyan);
+}
+.red {
+    border-top: 4px solid var(--red);
+}
+.blue {
+    border-top: 4px solid var(--blue);
+}
+.orange {
+    border-top: 4px solid var(--orange);
+}
+ h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 120px;
+    }
+    .box {
+        width: 20%;
+     
+    }
+    .header p {
+        width: 40%;
+    }
+}
