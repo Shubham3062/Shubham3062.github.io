@@ -103,6 +103,9 @@ h1:first-of-type {
 .orange {
     border-top: 4px solid var(--orange);
 }
+.green {
+    border-top: 4px solid #5dfe00;
+}
  h2 {
     color: var(--varyDarkBlue);
     font-weight: var(--weight3);
@@ -120,7 +123,7 @@ h1:first-of-type {
     }
     .box-down {
         position: relative;
-        top: 120px;
+        top: 0px;
     }
     .box {
         width: 20%;
