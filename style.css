@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.header{
+    background: #ad1deb;
+    background: -webkit-linear-gradient(to right, #6e72fc, #ad1deb); 
+    background: linear-gradient(to right, #6e72fc, #ad1deb); 
+    height: 100vh;
+    width: 100%;
+}
+.logo{
+    width:150px;
+    padding-top: 15px;
+    padding-left: 10px;
+    display:block;
+    position:absolute;
+}
+.nav-links{
+    list-style: none;
+    padding-top: 200px;
+}
+.nav-links-2{
+    display: none;
+}
+.nav-links li{
+    padding:18px 0;
+}
+.nav-links li a{
+    color:#fffffff3;
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 54px;
+    font-size: 18px;
+    transition: 0.2s linear;
+}
+.name{
+    color:#fffffff3;
+    font-family: 'Roboto Mono', monospace;
+}
+.name li{
+    padding: 30px;
+}
+.name li p{
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 3.6px;
+    transform:rotate(-90deg) translate(-100%);
+    transform-origin:left;
+    position:absolute;
+    margin-top: 20px;
+    left: 6.3%;
+} 
+.nav-links li a:hover{
+    color: #a7f5ff;
+}
+.name li p:hover{
+    color:#a7f5ff;
+}
+.text-box{
+    margin-top: -300px;
+    margin-left: 190px;
+    letter-spacing:1px;
+    line-height:-20px;
+    color: #fffffff3;
+}
+.text-box h4{
+    margin-left: 400px;
+    font-family: 'Roboto Mono', monospace;
+    font-size:46px;
+    font-weight: 500;
+}
+.text-box h1{
+    font-size:90px;
+    margin-left:70px;
+    line-height:-150;
+    color: transparent;
+    -webkit-text-stroke: 1px #fffffff3;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 18s linear infinite;
+    font-family: 'poppins',sans-serif;
+    font-weight: 700;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.auto-input{
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    margin-left: 245px;
+}
+.icons{
+    margin-top: 45px;
+    margin-left:-180px;
+    cursor:pointer;
+    text-align: center;
+}
+.icons a{
+    color:#fffffff3;
+    margin: 10px;
+    font-size:27px;
+    text-decoration: none; 
+}
+.icons a:hover{
+    color: #a7f5ff;
+}
+html{
+    scroll-behavior: smooth;
+}
+a#scrolldown{
+    position:absolute;
+    height:45px;
+    width:27px;
+    border:3px solid #fffffff3;
+    margin: auto;
+    left:0;
+    right:0;
+    bottom:50px;
+    border-radius:20px;
+}
+a#scrolldown:before{
+    position:absolute;
+    content:"";
+    margin:auto;
+    left:0;
+    right:0;
+    height:6px;
+    width:6px;
+    background-color: #fffffff3;
+    border-radius: 50%;
+    top: 4px;
+    animation:move-down 2s infinite;
+}
+@keyframes move-down{
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity:0;
+        transform: translateY(25px);
+    }
+}
+/* -----------------------about me------------------- */
+.aboutme h1{
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+    font-size: 40px;
+    font-weight:600;
+}
+.aboutme p{
+    margin-top: 15px;
+    justify-content: center;
+    text-align:center;
+    padding-left:250px;
+    padding-right:250px;
+    font-family: 'poppins',sans-serif;
+    font-size:15px;
+    font-weight:400;
+    color: #262626;
+}
+.aboutme .p2{
+   margin-top: -10px;
+}
+.profileimg{
+    width:180px;
+    margin-top:30px;
+    margin-left:540px;
+}
+.contact-btn{
+    list-style-type: none;
+    position: relative;
+    padding-top: 30px;
+    margin-left: 570px;
+    cursor:pointer;
+}
+.contact-btn .fa-solid{
+    margin-left: 2px;
+    text-align: center;
+}
+.contact-btn li a{
+    color:#262626;
+    text-decoration: none;
+    font-size:16px;
+    font-family: 'poppins',sans-serif;
+    font-weight:600;
+    box-sizing: border-box;
+    border-radius: 20px 20px 20px 20px;
+    border: 3px solid #262626;
+    padding:5px 25px;
+    display:inline-block;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: 0.1s;
+}
+.contact-btn .fa-solid:hover,.contact-btn li a:hover{
+    background-color: #262626;
+    color:#ffffff;
+}
+.copyright p{
+    font-size:15px;
+    font-weight:400;
+    font-family: 'Roboto Mono', monospace;
+    color:#262626;
+    margin-left: 485px;
+    margin-top:50px;
+    margin-bottom:30px;
+}
+.fa-copyright
+{
+    font-size:13px;
+}
+.copyright-contact{
+    display:none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px)
+{
+    .logo{
+        width:120px;
+        margin-top: 20px;
+        margin-left: -16px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-2{
+        display: inline-block;
+    }
+    .fa-ribbon{
+        color:#fffffff3;
+        text-decoration: none;
+        padding-top: 80px;
+        margin-left: 200px;
+        font-size: 27px;
+        transition: 0.2s linear;
+    }
+    .fa-phone{
+        color:#fffffff3;
+        text-decoration: none;
+        margin-left: 36px;
+        font-size: 27px;
+        transition: 0.2s linear;
+    }
+    .fa-briefcase{
+        color:#fffffff3;
+        text-decoration: none;
+        margin-left: 36px;
+        font-size: 27px;
+        transition: 0.2s linear;
+    }
+    .nav-links-2 .fa-ribbon:hover{
+        color: #a7f5ff;
+    }
+    .nav-links-2 .fa-phone:hover{
+        color: #a7f5ff;
+    }
+    .nav-links-2 .fa-briefcase:hover{
+        color: #a7f5ff;
+    }
+    .text-box h4{
+        margin-left: 140px;
+        margin-top: 270px;
+        font-size:36px;
+        font-weight: 400;
+    }
+    .text-box{
+        margin-top: -180px;
+        margin-left: 30px;
+    }
+    .text-box h1{
+        font-size:54px;
+        line-height:-50;
+        margin-left: 30px;  
+    }
+    .shah-name{
+        margin-left: 63px;
+    }
+   .auto-input{
+       margin-left:25px;
+       font-size: 27px;
+   }
+   .name li p{
+       display:none;
+   }
+   .icons{
+       margin-left: -20px;
+   }
+   /* -------------- About me------------------ */
+   .profileimg{
+       width: 150px;
+       margin-left:130px;
+   }
+   .aboutme p{
+       font-size:12px;
+       justify-content:center;
+       text-align:center;
+       padding-left:45px;
+       padding-right:45px;
+   } 
+   .copyright-contact{
+    display:flex;
+    color:#262626;
+    margin-left:75px;
+    font-size:13px;
+    margin-top:0px;
+    margin-bottom:0;
+}
+.copyright p{
+    margin-left:60px;
+}
+.contact-btn{
+    margin-left:145px;
+}
+.contact-btn .fa-solid:hover,.contact-btn li a:hover{
+ background-color: #ffffff;
+ color:#262626;
+}
+   
+}
+
+
