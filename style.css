@@ -106,7 +106,8 @@
     color:#fffffff3;
     margin: 10px;
     font-size:27px;
-    text-decoration: none; 
+    text-decoration: none;
+    cursor: pointer;
 }
 .icons a:hover{
     color: #a7f5ff;
