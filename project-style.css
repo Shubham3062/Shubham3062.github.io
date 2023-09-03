@@ -18,6 +18,12 @@ body{
     font-weight: 600;
     font-size: 45px;
 }
+.heading p {
+    margin-top: 15px;
+    line-height: 2;
+    color: hsl(0, 0%, 88%);
+    font-weight: 500;
+}
 .timeline{
     position: relative;
     max-width: 1200px;
