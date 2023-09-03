@@ -106,6 +106,9 @@ h1:first-of-type {
 .green {
     border-top: 4px solid #5dfe00;
 }
+.yellow {
+    border-top: 4px solid #ffcf00;
+}
  h2 {
     color: var(--varyDarkBlue);
     font-weight: var(--weight3);
